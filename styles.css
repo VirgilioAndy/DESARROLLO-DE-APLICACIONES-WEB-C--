@@ -1,0 +1,38 @@
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1:hover {
+  color: #ff5733;
+  transition: color 0.3s ease-in-out;
+}
+
+.card {
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.btn-primary {
+  background-color: #ff5733;
+  border-color: #ff5733;
+}
+
+.btn-primary:hover {
+  background-color: #e14e2d;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: #f8f9fa;
+  }
+  h1 {
+    color: #007bff;
+  }
+}
