@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario con Validación</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <form id="registroForm" novalidate>
+    <h2>Registro</h2>
+
+    <label>Nombre:
+      <input type="text" id="nombre" required />
+      <span class="error" id="nombreError"></span>
+    </label>
+
+    <label>Correo electrónico:
+      <input type="email" id="correo" required />
+      <span class="error" id="correoError"></span>
+    </label>
+
+    <label>Contraseña:
+      <input type="password" id="contrasena" required />
+      <span class="error" id="contrasenaError"></span>
+    </label>
+
+    <label>Confirmar contraseña:
+      <input type="password" id="confirmacion" required />
+      <span class="error" id="confirmacionError"></span>
+    </label>
+
+    <label>Edad:
+      <input type="number" id="edad" required />
+      <span class="error" id="edadError"></span>
+    </label>
+
+    <button type="submit" id="enviarBtn" disabled>Enviar</button>
+    <button type="reset">Reiniciar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
